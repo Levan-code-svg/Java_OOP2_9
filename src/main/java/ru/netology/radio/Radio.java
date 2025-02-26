@@ -12,7 +12,7 @@ public class Radio {
         return currentNumber;
     }
 
-    public void setCurrentNumber(int newCurrentNumber) { // указываем границы диапазона
+    public void setCurrentNumber(int newCurrentNumber) {
         if (newCurrentNumber < minNumber) {
             return;
         }
@@ -26,7 +26,7 @@ public class Radio {
         if (currentNumber < maxNumber) {
             currentNumber = currentNumber + 1;
         } else {
-            currentNumber = minNumber; // переход счетчика после 9 на 0
+            currentNumber = minNumber;
         }
     }
 
@@ -34,7 +34,7 @@ public class Radio {
         if (currentNumber > minNumber) {
             currentNumber = currentNumber - 1;
         } else {
-            currentNumber = maxNumber; // переход счетчика после 0 на 9
+            currentNumber = maxNumber;
         }
     }
 
@@ -42,7 +42,7 @@ public class Radio {
         return currentVolume;
     }
 
-    public void setCurrentVolume(int newCurrentVolume) { // указываем границы диапазона
+    public void setCurrentVolume(int newCurrentVolume) {
         if (newCurrentVolume < minVolume) {
             newCurrentVolume = minVolume;
         }
